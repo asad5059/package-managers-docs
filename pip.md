@@ -265,50 +265,7 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
-## Security
-
-### Checking for Vulnerabilities
-
-We can check our installed packages for known security vulnerabilities:
-
-```bash
-# Install safety
-pip install safety
-
-# Check for vulnerabilities
-safety check
-
-# Check with detailed report
-safety check --full-report
-```
-
-### Verifying Package Integrity
-
-```bash
-# Install with hash checking
-pip install --require-hashes -r requirements.txt
-```
-
-We can generate hashes using:
-```bash
-pip hash <package-file.whl>
-```
-
 ## Troubleshooting Common Issues
-
-### Permission Errors
-
-If we encounter permission errors, we have several options:
-
-```bash
-# Install for current user only (recommended)
-pip install --user <package-name>
-
-# Or use a virtual environment (best practice)
-python -m venv myenv
-source myenv/bin/activate  # or myenv\Scripts\activate on Windows
-pip install <package-name>
-```
 
 ### Clear pip Cache
 
