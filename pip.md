@@ -86,9 +86,6 @@ pip install -r requirements.txt
 
 # Install multiple packages
 pip install package1 package2 package3
-
-# Install package with extras (additional optional features)
-pip install package-name[extra1,extra2]
 ```
 
 ### Upgrading Packages
@@ -99,10 +96,6 @@ pip install --upgrade <package-name>
 
 # Upgrade pip itself
 pip install --upgrade pip
-
-# Upgrade all packages (requires pip-review)
-pip install pip-review
-pip-review --auto
 ```
 
 ### Uninstalling Packages
