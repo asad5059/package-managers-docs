@@ -187,6 +187,18 @@ npx eslint .
 
 For example, if we're building a website with shared components, we can organize it like this:
 
+```
+my-monorepo/
+  package.json
+  packages/
+    app/
+      package.json
+    ui/
+      package.json
+    utils/
+      package.json
+```
+
 ```json
 {
   "workspaces": [
@@ -194,7 +206,7 @@ For example, if we're building a website with shared components, we can organize
   ]
 }
 ```
-
+`"workspaces": ["packages/*"]` → tells npm: “Look inside the `packages/` folder — every subfolder is a workspace package”
 This setup lets us install dependencies for all packages at once and easily share code between them.
 
 ### Understanding `.npmrc` and Private Registries — A Quick Summary
